@@ -1,0 +1,79 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!-- 
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Survey Form</h1>
+    </header>
+    <main>
+       <p id="description">Feel free to let us know how we can improve our website</p>
+      <form id="survey-form">
+        <div id="basic-info-container">
+        <div id="basic-info-labels" class="basic-info">
+        <label for="name" id="name-label">*Name: </label>
+          <br>
+        <label for="email" id="email-label">*Email: </label>
+          <br>
+        <label for="number" id="number-label">*Age: </label>
+          <br>
+        </div>
+        <div id="basic-info-inputs" class="basic-info">
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+          <br>
+          <input type="email" id="email" name="email" placeholder="Enter an email address" required>
+          <br>
+          <input type="number" id="number" name="age" placeholder="Enter your age" min="1" max="125" required>
+          <br>
+        </div>
+        </div>
+        <div id="status-container">
+          <label for="dropdown" id="status-label">Which describes your current status?</label>
+          <select id="dropdown">
+            <option value="Student">Student</option>
+            <option value="Employee">Employee</option>
+            <option value="Retired">Retired</option>
+          </select>
+        </div>
+        <div id="referral-container">
+          <fieldset>
+            <legend>Would you recommend FreeCodeCamp to someone you know?</legend>
+            <label><input type="radio" name="likelihood" value="Absolutely">Absolutely</label>
+            <label><input type="radio" name="likelihood" value="Maybe">Maybe</label>
+            <label><input type="radio" name="likelihood" value="No">No</label>
+          </fieldset>
+        </div>
+        <div id="improvements-container">
+          <div class="improvements-column">
+          <p>What would you improve about FreeCodeCamp?</p>
+          <p>(Check all that apply)</p>
+          </div>
+          <div class="improvements-column">
+            <label><input type="checkbox" value="Projects">Projects</label>
+            <label><input type="checkbox" value="Forums">Forums</label>
+            <label><input type="checkbox" value="Videos">Videos</label>
+            <label><input type="checkbox" value="Wikis">Wikis</label>
+            <label><input type="checkbox" value="Challenges">Challenges</label>
+          </div>
+        </div>
+        <div id="comments-container">
+          <p>Do you have any comments or suggestions?</p>
+          <textarea rows="8" cols="40" placeholder="Enter your comments here..."></textarea>
+        </div>
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>

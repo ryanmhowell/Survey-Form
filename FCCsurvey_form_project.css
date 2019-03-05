@@ -1,0 +1,149 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+  background-color: lightblue;
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 42px;
+}
+
+header {
+  text-align: center;
+  margin: 20px 0;
+}
+
+#description {
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+}
+
+
+
+/* basic info section */
+
+
+
+#basic-info-container {
+  display: flex;
+  justify-content: center;
+}
+
+#basic-info-labels {
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.basic-info {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.basic-info input {
+  padding: 10px 5px;
+  width: 220px;
+  margin-left: 5px;
+}
+
+
+
+/* status section */
+
+
+#status-container {
+  display: flex;
+  justify-content: center;
+  margin: 25px;
+}
+
+#status-label {
+  margin: 5px 8px;
+}
+
+#dropdown {
+  padding: 8px 5px;
+}
+
+
+/* referral section */
+
+#referral-container  {
+  width: 70%;
+  margin: 0 auto;
+}
+
+#referral-container fieldset {
+  display: flex;
+  margin: 40px 20px;
+}
+
+#referral-container input {
+  margin-right: 6px;
+}
+
+#referral-container label {
+  margin-bottom: 5px;
+}
+/* improvements section */
+
+#improvements-container {
+  display: flex;
+  justify-content: center;
+}
+
+.improvements-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.improvements-column p {
+  margin: 0 15px 10px 0;
+}
+
+.improvements-column label {
+  margin-bottom: 5px;
+}
+
+
+/* comments section */
+
+
+#comments-container {
+  display: flex;
+  margin-top: 20px;
+  padding: 30px 0;
+  justify-content: center;
+}
+
+#comments-container p {
+  margin: 0 15px;
+}
+
+
+/* submit button */
+
+
+button {
+  display: block;
+  margin: 30px auto;
+  padding: 10px 18px;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: skyblue;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
+
+main {
+  width: 65%;
+  background-color: white;
+  margin: 40px auto;
+  padding: 30px 0;
+  border-radius: 10px;
+}
